@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lyv • Labs & Insights</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" aria-label="Primary">
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="leaf">L</span><span>Lyv</span>
+      </div>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a class="active" href="labs.html">Labs &amp; Insights</a></li>
+        <li><a href="#">Learn</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+      <div style="display:flex; gap:10px; align-items:center">
+        <button class="btn">Ask Olivia</button>
+        <button class="icon-btn" title="Notifications">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5b6b61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+        </button>
+        <button class="icon-btn" title="Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5b6b61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21a8 8 0 10-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <h1>Health Overview</h1>
+
+    <!-- Overview tiles -->
+    <section class="overview" aria-label="Overview">
+      <div class="tile">
+        <div class="sub">Optimal</div>
+        <div class="k good">65</div>
+        <div class="sub">biomarkers in range</div>
+      </div>
+      <div class="tile">
+        <div class="sub">Monitor</div>
+        <div class="k ok">3</div>
+        <div class="sub">biomarkers need attention</div>
+      </div>
+      <div class="tile">
+        <div class="sub">Improved</div>
+        <div class="k good">4</div>
+        <div class="sub">since last test</div>
+      </div>
+      <div class="tile">
+        <div class="sub">Last lab draw</div>
+        <div class="k">2w</div>
+        <div class="sub">results updated</div>
+      </div>
+    </section>
+
+    <div class="tip">Click any result for detailed information</div>
+
+    <!-- Heart Health -->
+    <section class="section" id="heart">
+      <div class="section-header">
+        <h2>❤️ Heart Health &amp; Inflammation</h2>
+        <p>Cardiovascular health and inflammatory markers</p>
+      </div>
+      <div class="panel">
+        <article class="bio">
+          <h3>ApoB <span class="badge b-good">Optimal</span></h3>
+          <div><span class="val">89</span> <span class="unit">µg/dL</span></div>
+          <div class="meter"><span style="width:72%"></span></div>
+          <div class="desc"><strong>Range:</strong> &lt; 90 • ApoB indicates the number of atherogenic particles in the blood.</div>
+        </article>
+
+        <article class="bio">
+          <h3>LDL-C <span class="badge b-warn">Monitor</span></h3>
+          <div><span class="val">102</span> <span class="unit">mg/dL</span></div>
+          <div class="meter warn"><span style="width:45%"></span></div>
+          <div class="desc"><strong>Range:</strong> &lt; 100 • Borderline LDL may increase cardiovascular risk if sustained.</div>
+        </article>
+
+        <article class="bio">
+          <h3>Triglycerides <span class="badge b-good">Optimal</span></h3>
+          <div><span class="val">120</span> <span class="unit">mg/dL</span></div>
+          <div class="meter"><span style="width:60%"></span></div>
+          <div class="desc"><strong>Range:</strong> &lt; 150 • Healthy triglyceride levels support heart and metabolic health.</div>
+        </article>
+
+        <article class="bio">
+          <h3>hs-CRP <span class="badge b-good">Optimal</span></h3>
+          <div><span class="val">1.5</span> <span class="unit">mg/L</span></div>
+          <div class="meter"><span style="width:68%"></span></div>
+          <div class="desc"><strong>Range:</strong> &lt; 3 • CRP reflects overall inflammation.</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Hormonal Health -->
+    <section class="section" id="hormonal">
+      <div class="section-header">
+        <h2>🩸 Hormonal Health</h2>
+        <p>Reproductive hormones, thyroid, and stress markers</p>
+      </div>
+      <div class="panel">
+        <article class="bio">
+          <h3>Estradiol <span class="badge b-good">Optimal</span></h3>
+          <div><span class="val">75</span> <span class="unit">pg/mL</span></div>
+          <div class="meter"><span style="width:58%"></span></div>
+          <div class="desc"><strong>Range:</strong> 30–400 (varies by phase). Key estrogen hormone.</div>
+        </article>
+        <article class="bio">
+          <h3>Progesterone <span class="badge b-good">Optimal</span></h3>
+          <div><span class="val">12</span> <span class="unit">ng/mL</span></div>
+          <div class="meter"><span style="width:70%"></span></div>
+          <div class="desc"><strong>Range:</strong> 5–20 (luteal). Supports pregnancy.</div>
+        </article>
+        <article class="bio">
+          <h3>Testosterone <span class="badge b-good">Optimal</span></h3>
+          <div><span class="val">35</span> <span class="unit">ng/dL</span></div>
+          <div class="meter"><span style="width:64%"></span></div>
+          <div class="desc"><strong>Range:</strong> 15–70 (female). Impacts mood &amp; metabolism.</div>
+        </article>
+        <article class="bio">
+          <h3>DHEA-S <span class="badge b-good">Optimal</span></h3>
+          <div><span class="val">180</span> <span class="unit">µg/dL</span></div>
+          <div class="meter"><span style="width:62%"></span></div>
+          <div class="desc"><strong>Range:</strong> 95–380 • Precursor to sex hormones.</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Metabolic Health -->
+    <section class="section" id="metabolic">
+      <div class="section-header">
+        <h2>🔥 Metabolic Health</h2>
+        <p>Blood sugar, insulin sensitivity, and energy metabolism</p>
+      </div>
+      <div class="panel">
+        <article class="bio">
+          <h3>Insulin <span class="badge b-good">Optimal</span></h3>
+          <div><span class="val">6</span> <span class="unit">µIU/mL</span></div>
+          <div class="meter"><span style="width:65%"></span></div>
+          <div class="desc"><strong>Range:</strong> 2–10 • Reflects body’s insulin response.</div>
+        </article>
+        <article class="bio">
+          <h3>HOMA-IR <span class="badge b-good">Optimal</span></h3>
+          <div><span class="val">1.2</span></div>
+          <div class="meter"><span style="width:70%"></span></div>
+          <div class="desc"><strong>Range:</strong> &lt; 2.0 • Insulin sensitivity index.</div>
+        </article>
+        <article class="bio">
+          <h3>HbA1c <span class="badge b-good">Optimal</span></h3>
+          <div><span class="val">5.2%</span></div>
+          <div class="meter"><span style="width:72%"></span></div>
+          <div class="desc"><strong>Range:</strong> ≤ 5.7% • Average glucose past ~3 months.</div>
+        </article>
+        <article class="bio">
+          <h3>Lactate <span class="badge b-good">Optimal</span></h3>
+          <div><span class="val">1.1</span> <span class="unit">mmol/L</span></div>
+          <div class="meter"><span style="width:60%"></span></div>
+          <div class="desc"><strong>Range:</strong> 0.5–2.2 • Can elevate with intense exercise.</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Nutrient Health -->
+    <section class="section" id="nutrient">
+      <div class="section-header">
+        <h2>🥗 Nutrient Health</h2>
+        <p>Blood vitamins, mineral status, and energy metabolism</p>
+      </div>
+      <div class="panel">
+        <article class="bio">
+          <h3>Vitamin D <span class="badge b-good">Optimal</span></h3>
+          <div><span class="val">42</span> <span class="unit">ng/mL</span></div>
+          <div class="meter"><span style="width:62%"></span></div>
+          <div class="desc"><strong>Range:</strong> 30–100 • Supports immune function and bone health.</div>
+        </article>
+        <article class="bio">
+          <h3>Vitamin B12 <span class="badge b-good">Optimal</span></h3>
+          <div><span class="val">520</span> <span class="unit">pg/mL</span></div>
+          <div class="meter"><span style="width:67%"></span></div>
+          <div class="desc"><strong>Range:</strong> 200–900 • Nerve and red blood cell health.</div>
+        </article>
+        <article class="bio">
+          <h3>Ferritin <span class="badge b-good">Optimal</span></h3>
+          <div><span class="val">85</span> <span class="unit">ng/mL</span></div>
+          <div class="meter"><span style="width:58%"></span></div>
+          <div class="desc"><strong>Range:</strong> 20–300 • Iron stores; low may indicate deficiency.</div>
+        </article>
+        <article class="bio">
+          <h3>Magnesium <span class="badge b-good">Optimal</span></h3>
+          <div><span class="val">2.0</span> <span class="unit">mg/dL</span></div>
+          <div class="meter"><span style="width:60%"></span></div>
+          <div class="desc"><strong>Range:</strong> 1.7–2.2 • Muscle, nerve, and blood pressure support.</div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Lyv Health • Educational use only
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lyv • Dashboard</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="nav" aria-label="Primary">
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="leaf">L</span>
+        <span>Lyv</span>
+      </div>
+
+      <ul>
+        <li><a class="active" href="index.html">Dashboard</a></li>
+        <li><a href="labs.html">Labs &amp; Insights</a></li>
+        <li><a href="#">Learn</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn">Ask Olivia</button>
+        <button class="icon-btn" aria-label="Notifications" title="Notifications">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5b6b61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Profile" title="Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5b6b61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21a8 8 0 10-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="greeting">Good morning, <span style="font-weight:800">Sarah</span></div>
+
+    <div class="grid">
+      <!-- LEFT COLUMN -->
+      <section class="subgrid">
+
+        <!-- Lab Metrics -->
+        <article class="card">
+          <h3>Lab Metrics</h3>
+
+          <div class="metric">
+            <div class="muted">Heart Health</div>
+            <div>
+              <div class="meter"><span style="width:62%"></span></div>
+              <div class="scale"><span>Poor</span><span>Optimal</span></div>
+            </div>
+            <div class="pill">Optional</div>
+          </div>
+
+          <div class="metric">
+            <div class="muted">Metabolism</div>
+            <div>
+              <div class="meter ok"><span style="width:78%"></span></div>
+              <div class="scale"><span>Sluggish</span><span>Efficient</span></div>
+            </div>
+            <div class="pill">—</div>
+          </div>
+
+          <div class="metric">
+            <div class="muted">Hormones</div>
+            <div>
+              <div class="meter bad"><span style="width:35%"></span></div>
+              <div class="scale"><span>Imbalanced</span><span>Balanced</span></div>
+            </div>
+            <div class="pill">—</div>
+          </div>
+
+          <div class="metric">
+            <div class="muted">Nutrients</div>
+            <div>
+              <div class="meter"><span style="width:64%"></span></div>
+              <div class="scale"><span>Inadequate</span><span>Adequate</span></div>
+            </div>
+            <div class="pill">—</div>
+          </div>
+        </article>
+
+        <!-- Wellness / Score / Invite -->
+        <div class="cards-3">
+          <article class="card">
+            <h3>Wellness Metrics</h3>
+
+            <div class="row">
+              <div>🙂</div>
+              <div><strong>Mood</strong><div class="small">Mood improvements in the past week</div></div>
+              <div><strong>8.2</strong> /10</div>
+            </div>
+
+            <div class="row">
+              <div>🪫</div>
+              <div><strong>Energy</strong><div class="small">Energy recovery needs reinforcement</div></div>
+              <div><strong>7.1</strong> /10</div>
+            </div>
+
+            <div class="row">
+              <div>😴</div>
+              <div><strong>Sleep</strong><div class="small">Slightly reduced sleep hours</div></div>
+              <div><strong>7.5</strong> /10</div>
+            </div>
+
+            <div class="row">
+              <div>⚡</div>
+              <div><strong>Stress</strong><div class="small">Stress spikes observed mid-week</div></div>
+              <div><strong>3.2</strong> /10</div>
+            </div>
+
+            <div class="row">
+              <div>📉</div>
+              <div><strong>HRV</strong><div class="small">Down from last week</div></div>
+              <div class="delta neg">-5%</div>
+            </div>
+          </article>
+
+          <article class="card score">
+            <div class="score-wrap">
+              <div class="donut" style="--value:86">
+                <div class="ring" aria-hidden="true"></div>
+                <div class="center">86</div>
+                <div class="badge">Lyv Score</div>
+              </div>
+              <div>
+                <h3 style="margin-top:0">Great progress ✨</h3>
+                <p class="muted" style="margin:0">
+                  Your Lyv Score is trending up. Keep supporting your metabolism and sleep to push into the 90s.
+                </p>
+                <div style="margin-top:12px; display:flex; flex-direction:column; gap:10px">
+                  <span class="pill">+ Nutrition consistency</span>
+                  <span class="pill">+ Daily steps</span>
+                  <span class="pill">– Late caffeine</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="card invite">
+            <img alt="Two friends smiling on a couch"
+                 src="https://images.unsplash.com/photo-1524255684952-d7185b509571?q=80&w=1280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wx">
+            <div class="body">
+              <h3>Invite a friend to Lyv</h3>
+              <p class="muted" style="margin:6px 0 0">Share the journey—each friend gets a free month.</p>
+              <div class="cta">
+                <a class="link" href="#">Send invitation</a>
+                <span class="chip">🎁 Free month</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Insight Strip -->
+        <article class="card strip">
+          <div class="dot">E</div>
+          <div>
+            <strong>Estrogen dip aligns with high fatigue</strong>
+            <div class="muted">
+              Energy may drop 3–5 points during days 23–31 of your cycle. Consider increasing iron-rich foods,
+              and timing workouts earlier in the day.
+            </div>
+          </div>
+          <div class="pill">Learn more</div>
+        </article>
+
+        <!-- Guidance Cards -->
+        <div class="cards-3">
+          <article class="card">
+            <h3>Nutrition</h3>
+            <div class="list">
+              <div class="row">
+                <div>🥗</div>
+                <div>Increase leafy greens, nuts, and seeds</div>
+                <div class="small">Daily</div>
+              </div>
+              <div class="row">
+                <div>💧</div>
+                <div>Hydration goal: 2.3L</div>
+                <div class="small">Ongoing</div>
+              </div>
+              <div class="row">
+                <div>🍫</div>
+                <div>Limit late-evening sweets</div>
+                <div class="small">This week</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Supplements</h3>
+            <div class="list">
+              <div class="row">
+                <div>🧪</div>
+                <div>Vitamin D3 — 2000 IU</div>
+                <div class="small">Daily</div>
+              </div>
+              <div class="row">
+                <div>💊</div>
+                <div>Magnesium Glycinate — 300 mg</div>
+                <div class="small">Night</div>
+              </div>
+              <div class="row">
+                <div>🫘</div>
+                <div>Iron — as advised</div>
+                <div class="small">3×/week</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Exercise</h3>
+            <div class="list">
+              <div class="row">
+                <div>🚶</div>
+                <div>10k steps/day &amp; zone 2 cardio</div>
+                <div class="small">5x weekly</div>
+              </div>
+              <div class="row">
+                <div>🏋️</div>
+                <div>Strength: 30–40 min session</div>
+                <div class="small">2–3x</div>
+              </div>
+              <div class="row">
+                <div>🧘</div>
+                <div>Wind-down stretch, 10 minutes</div>
+                <div class="small">Evenings</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </section>
+
+      <!-- RIGHT COLUMN -->
+      <aside class="subgrid">
+
+        <article class="card">
+          <h3>Your Support Team</h3>
+          <div class="list" role="list">
+            <div class="row" role="listitem">
+              <div>🧑‍⚕️</div>
+              <div>
+                <strong>Lab results reviewed</strong>
+                <div class="small">Your physician reviewed your latest labs.</div>
+              </div>
+              <a class="link" href="#">View notes</a>
+            </div>
+            <div class="row">
+              <div>💬</div>
+              <div>
+                <strong>Message from Coach Mia</strong>
+                <div class="small">“Let’s keep the evening routine light this week.”</div>
+              </div>
+              <a class="link" href="#">Reply</a>
+            </div>
+            <div class="row">
+              <div>📞</div>
+              <div>
+                <strong>Check-in scheduled</strong>
+                <div class="small">Thu, 3:00–3:30 PM • Zoom</div>
+              </div>
+              <a class="link" href="#">Reschedule</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Recent Results</h3>
+          <div class="metric">
+            <div class="muted">Cholesterol</div>
+            <div>
+              <div class="meter"><span style="width:70%"></span></div>
+              <div class="scale"><span>High</span><span>Optimal</span></div>
+            </div>
+            <div class="delta pos">+2%</div>
+          </div>
+          <div class="metric">
+            <div class="muted">Ferritin</div>
+            <div>
+              <div class="meter ok"><span style="width:55%"></span></div>
+              <div class="scale"><span>Low</span><span>Target</span></div>
+            </div>
+            <div class="delta pos">+6</div>
+          </div>
+          <div class="metric">
+            <div class="muted">A1C</div>
+            <div>
+              <div class="meter bad"><span style="width:30%"></span></div>
+              <div class="scale"><span>High</span><span>Good</span></div>
+            </div>
+            <div class="delta neg">-0.1</div>
+          </div>
+        </article>
+
+        <article class="card" style="display:grid; place-items:center; text-align:center">
+          <h3 style="margin:8px 0 6px">Need a hand?</h3>
+          <p class="muted" style="margin:0 0 14px">Questions about your plan or results? We're here to help.</p>
+          <button class="btn">Book a session</button>
+        </article>
+
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="y"></span> Lyv Health • For education only. Not medical advice.
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
